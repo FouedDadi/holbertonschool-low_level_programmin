@@ -1,1 +1,1 @@
-foffa ektib 
+it's all about C programming language basics 
