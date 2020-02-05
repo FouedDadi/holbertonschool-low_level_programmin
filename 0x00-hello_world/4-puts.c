@@ -1,7 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
+/**
+*main-puts print the message
+*Return:0
+*/
 int main(void)
- {
-// puts() displays the string inside quotation
-   puts("\"Programming is like building a multilingual puzzle");
-   return 0;
+{puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
