@@ -12,7 +12,7 @@ while (x <= 'z')
 {
 putchar (x);
 x++;
-\n
 }
+ putchar ('\n');
 return (0);
 }
