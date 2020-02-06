@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdo.h>
+#include <stdio.h>
 /**
  *main - will give a random int to the n variable and compare it to 0
  *Return: 0
