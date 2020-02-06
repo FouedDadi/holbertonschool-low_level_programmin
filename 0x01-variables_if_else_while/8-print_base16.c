@@ -10,7 +10,8 @@ int x = 0;
 char n = 'a';
 for (x = 0; x <= 9; x++)
 {
-putchar(x + '0');                                                                                                      }
+putchar(x + '0');
+}
 while (n <= 'f')
 {
 putchar (n);
