@@ -6,11 +6,12 @@
  *Return: 0
  */
 int main(void)
+{ char x;
+x = 'a';
+while (x <= 'z')
 {
-for (int x = 'A'; x <= 'z'; x++)
-{
-x = tolower(x);
-putchar(x);
+putchar (x);
+x++;
 }
 return (0);
 }
