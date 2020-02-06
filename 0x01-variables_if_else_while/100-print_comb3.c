@@ -15,7 +15,7 @@ for (n = v ; n <= '9'; n++)
 {
 putchar(x);
 putchar(n);
-if (!(x == '9' && n == '9'))
+if (!(x == '8' && n == '9'))
 {
 putchar(',');
 putchar (' ');
