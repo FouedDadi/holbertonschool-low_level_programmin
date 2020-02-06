@@ -1,7 +1,7 @@
 #include<unistd.h>
 #include<stdio.h>
 /**
- *main will print an error
+ *main - will print an error
  *use write to print a message as an error
  *Return:1
 */
