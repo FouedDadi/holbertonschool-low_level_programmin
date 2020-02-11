@@ -1,18 +1,18 @@
 #include "holberton.h"
 /**
- *main - fucntion main will print the alphabet in lowercase
+ *_abs - show only absolute
+ *@r: just a normal int
  *Return: 0
  */
-int main(void)
+int _abs(int r)
 {
-int r;
 if (r < 0)
 {
 r = -r;
+return (r);
 }
 else
 {
-r = r;
+return(r);
 }
-return 0;
 }
