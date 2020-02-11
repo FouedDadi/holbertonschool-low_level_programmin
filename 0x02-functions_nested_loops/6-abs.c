@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *_abs - show only absolute
- *@r: just a normal int
+ *_abs- show only absolute
+ *@r:just a normal int
  *Return: 0
  */
 int _abs(int r)
@@ -13,6 +13,6 @@ return (r);
 }
 else
 {
-return(r);
+return (r);
 }
 }
