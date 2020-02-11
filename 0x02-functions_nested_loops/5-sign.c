@@ -1,25 +1,25 @@
 #include "holberton.h"
-#include "\_putchar.c"
 /**
- *main - fucntion main will print the alphabet in lowercase
- *Return: 0
+ *print_sign - show sign of the int
+ *@n: just an int
+ *Return: + for positive 0 for zero and - for negative
  */
-int main(void)
+int print_sign(int n)
 {
 int n;
-if (n > 0 )
+if (n > 0)
 {
-return 1;
 _putchar('+');
+return (1);
 }
-else if (n == 0 )
+else if (n == 0)
 {
-return 0;
-_putchar(0);
+_putchar('0');
+return (0);
 }
 else
 {
-return -1;
 _putchar('-');
+return (-1);
 }
 }
