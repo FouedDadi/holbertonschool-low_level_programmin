@@ -1,9 +1,9 @@
-#include "_putchar.c"
+#include "holberton.h"
 /**
  *main - fucntion main will print the alphabet in lowercase
  *Return: 0
  */
-int main (void)
+void print_alphabet(void)
 {
 char x;
 x = 'a';
@@ -13,5 +13,4 @@ _putchar(x);
 x++;
 }
 _putchar('\n');
-return (0);
 }
