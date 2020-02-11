@@ -1,1 +1,1 @@
-it's all about C programming language basics 
+this is all about C programming language

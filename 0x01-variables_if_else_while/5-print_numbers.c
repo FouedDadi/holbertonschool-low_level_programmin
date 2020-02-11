@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- *main - Entry point
- *execpt q & e
+ *main - print all digit numbers of base 10
  *Return: Always 0 (Success)
  */
 int main(void)
