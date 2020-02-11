@@ -1,14 +1,14 @@
 #include <unistd.h>
 int main(void)
 {
-char c[]="Holberton";
-int x;
-int n=sizeof(c);
-for (x = 0; x <= n-1; x++)
-{
-putchar(c[x]);
-
-}
-putchar('\n');
-return 0;
+_putchar('H');
+ _putchar('o');
+ _putchar('l');
+ _putchar('b');
+ _putchar('e');
+ _putchar('r');
+ _putchar('t');
+ _putchar('o');
+ _putchar('n');
+_putchar('\n');
 }
