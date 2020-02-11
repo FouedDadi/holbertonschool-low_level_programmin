@@ -1,16 +1,17 @@
 #include "holberton.h"
 /**
- *main - fucntion main will print the alphabet in lowercase
- *Return: 0
+ *_isalpha - will print the alphabet in lowercase
+ *@c: int
+ *Return: return 1 if c is {a...Z} else return 0
  */
-int main(void)
+int _isalpha(int c)
 {
-  int c;
-  if (c >= 'a' && c <= 'Z')                                                                                               {
-    return 1;
-  }
-  else
-    {
-      return 0;
-    }
+if (c >= 'a' && c <= 'Z')
+{
+return (1);
+}
+else
+{
+return (0);
+}
 }
