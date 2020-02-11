@@ -1,12 +1,14 @@
 #include "holberton.h"
 /**
- *main - fucntion main will print the alphabet in lowercase
+ *print_last_digit- will show last digit
+ *@LD:just an int
  *Return: 0
  */
-int main(void)
+int print_last_digit(int LD)
 {
-int x, y;
-x = y % 10;
-_putchar(x);
-return 0;
+LD = LD % 10;
+if (LD < 0)
+LD = -LD;
+_putchar(LD + '0');
+return (LD);
 }
