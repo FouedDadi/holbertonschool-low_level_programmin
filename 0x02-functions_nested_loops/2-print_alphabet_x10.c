@@ -1,10 +1,9 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
- *main - fucntion main will print the alphabet in lowercase
- *Return: 0
+ *print_alphabet - fucntion main will print the alphabet in lowercase 10 times
+ *
  */
-int main(void)
+void print_alphabet_x10(void)
 { 
 char x;
 x = 'a';
@@ -18,5 +17,4 @@ x++;
 }
 }
 _putchar('\n');
-return (0);
 }
