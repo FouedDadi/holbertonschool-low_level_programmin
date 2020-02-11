@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-*main - will print Holberton
-*Return: 0
-*/
+ *main - will print Holberton
+ *Return: 0
+ */
 int main(void)
 {
 _putchar('H');
