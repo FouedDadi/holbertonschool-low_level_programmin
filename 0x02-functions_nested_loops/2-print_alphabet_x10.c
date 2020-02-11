@@ -1,14 +1,14 @@
 #include "holberton.h"
 /**
- *print_alphabet - fucntion main will print the alphabet in lowercase 10 times
+ *print_alphabet_x10 - print the alphabet in lowercase 10 times
  *
  */
 void print_alphabet_x10(void)
-{ 
+{
 char x;
 x = 'a';
 int n;
-for (n = 0; n <=9; n++)
+for (n = 1; n <= 10; n++)
 {
 while (x <= 'z')
 {
