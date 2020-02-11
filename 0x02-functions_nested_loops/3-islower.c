@@ -1,17 +1,17 @@
 #include "holberton.h"
 /**
- *main - fucntion main will print the alphabet in lowercase
- *Return: 0
+ *_islower - show if caracter is lowercase
+ *
  */
-int main(void)
+int _islower(int c);
 {
 int c;
 if (c >= 'a' && c <= 'z')
 {
-return 1;
+return (1);
 }
 else
 {
-return 0;
+return (0);
 }
 }
