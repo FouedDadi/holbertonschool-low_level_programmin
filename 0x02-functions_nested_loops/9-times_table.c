@@ -13,10 +13,10 @@ for (y = 0; y <= 9; y++)
 S = x * y;
 if (S < 10)
 {
-_putchar((S) + '0');
+_putchar(S + '0');
 if (y < 9)
 {
-  if (((y + 1) * x) >= 10)
+if (((y + 1) * x) >= 10)
 {
 _putchar(',');
 _putchar(' ');
