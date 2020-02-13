@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
- *_isupper- uppercase
+ *_isdigit- verify if it's a digit
  *@c: character
  *Return: return 0
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
-if (c >= 'A' && c <= 'Z')
+if (c >= 0 && c <= 9)
 {
 return (1);
 }
