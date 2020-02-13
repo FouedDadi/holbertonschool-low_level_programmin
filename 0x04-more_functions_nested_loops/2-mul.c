@@ -3,11 +3,9 @@
  *mul- multiplication a * b
  *@a: integer
  *@b: integer
- *Return: return 0
+ *Return: return a*b
  */
 int mul(int a, int b)
 {
-int x;
-x = a * b;
-return (0);
+return (a * b);
 }
