@@ -10,13 +10,13 @@ int x = 0, l = 0;
 while (str[l])
 l++;
 if (l % 2 == 0)
-x = (l / 2);
+x = ((l / 2) + '\0');
 else
-x = (l - 1) / 2;
+x = (((l - 1) / 2) + '\0');
 while (*(str + x))
 {
 _putchar(str[x]);
 x++;
-_putchar('\n');
 }
+_putchar('\n');
 }
