@@ -12,7 +12,7 @@ l++;
 if (l % 2 == 0)
 x = (l / 2);
 else
-x = ((l - 1) / 2);
+x = ((l + 1) / 2);
 while (*(str + x))
 {
 _putchar(str[x]);
