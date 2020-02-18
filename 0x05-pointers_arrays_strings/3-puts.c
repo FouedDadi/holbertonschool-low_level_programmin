@@ -1,7 +1,6 @@
 #include "holberton.h"
 /**
  *_puts- print a string
- *@x: character x
  *@str: string pointer
  *
  */
