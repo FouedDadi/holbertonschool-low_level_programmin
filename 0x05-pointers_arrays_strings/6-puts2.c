@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  *puts2- print values of even numbers
  *@str: pointer
