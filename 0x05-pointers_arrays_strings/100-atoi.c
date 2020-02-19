@@ -23,6 +23,5 @@ while ((*s >= '0') && (*s <= '9'))
 x = (x * 10) + ((*s) - '0');
 s++;
 }
-_putchar(w);
-return (0);
+return (w);
 }
