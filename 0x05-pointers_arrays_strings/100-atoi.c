@@ -6,22 +6,18 @@
  */
 int _atoi(char *s)
 {
-int w;
-int x;
-int y;
-x = 0;
-y = 1;
-while (('-' == (*s)) || ((*s) == '+'))
+int i = 0;
+int result =0;
+int sign = 1;
+while (s[i] != '\0')
 {
-if (*s == '-')
-y = y * -1;
-s++;
-}
-while ((*s >= '0') && (*s <= '9'))
+if (s[i] == '-')
+sign = sign * -1;
+else if ((s[i] >= '0') && (s[i] <= '9'))
 {
-x = (x * 10) + ((*s) -'0');
-s++;
+result = (result * 10) + ((s[i]) -'0');
 }
-w = x *y;
-return (w);
+i++;
+}
+return (result * sign);
 }
