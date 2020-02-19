@@ -6,10 +6,12 @@
  */
 int _atoi(char *s)
 {
+int w;
 int x;
 int y;
 x = 0;
 y = 1;
+w = x * y;
 while (('-' == (*s)) || ((*s) == '+'))
 {
 if (*s == '-')
@@ -21,5 +23,6 @@ while ((*s >= '0') && (*s <= '9'))
 x = (x * 10) + ((*s) - '0');
 s++;
 }
-return (x * y);
+_putchar(w);
+return (0);
 }
