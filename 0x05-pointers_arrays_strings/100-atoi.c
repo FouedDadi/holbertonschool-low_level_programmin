@@ -23,6 +23,5 @@ x = (x * 10) + ((*s) -'0');
 s++;
 }
 w = x *y;
-_putchar(w);
-return (0);
+return (w);
 }
