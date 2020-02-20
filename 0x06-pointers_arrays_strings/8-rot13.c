@@ -5,20 +5,22 @@
  *Return: return s
  */
 char *rot13(char *s)
+{ 
+char one[]= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char two[]= "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+int i, x, y;
+for (i = 0; s[i] != '\0'; i++)
 {
-int i = 0;
-while (s[i] != '\0')
+y = 0;
+for (x = 0; one[x] != '\0'; x++)
 {
-if ((s[i] >= 'a' && s[i] <='m') || (s[i] >= 'A' && s[i] <= 'M'))
+if (s[i] == one[x])
 {
-s[i] = s[i] + 13;
+y = x;
+s[i] = two[y];
 }
-else
-while ((s[i] >= 'n' && s[i] <='z') || (s[i] >= 'N' && s[i] <= 'Z'))
-{
-s[i] = s[i] - 13;
 }
-i++;
-}
+y++;
+}  
 return (s);
 }
