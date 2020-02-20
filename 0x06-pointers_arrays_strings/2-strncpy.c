@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *strncpy- copy a string
+ *_strncpy- copy a string
  *@dest: first string
  *@src: second string
  *@n: max n of bytes
@@ -17,5 +17,5 @@ dest++;
 src++;
 }
 dest = '\0';
-return p;
+return (p);
 }
