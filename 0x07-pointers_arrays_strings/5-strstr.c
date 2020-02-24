@@ -18,7 +18,7 @@ haystack++;
 y++;
 }
 if (!*y)
-return (x);       
+return (x);      
 haystack = x + 1;
 }
 return (NULL);
