@@ -8,17 +8,17 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-while (*haystack) 
+while (*haystack)
 {
 char *x = haystack;
 char *y = needle;
-while (*haystack == *y) 
+while (*haystack == *y)
 {
 haystack++;
 y++;
-} 
+}
 if (!*y)
-return (x);        
+return (x);       
 haystack = x + 1;
 }
 return (NULL);
