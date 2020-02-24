@@ -13,5 +13,5 @@ for (x = 0; x < size; x++)
 S1 += *(a + x * size + x);
 S2 += *(a + (x * size) + (size - 1 - x));
 }
-printf("%d ,%d\n", S1, S2);
+printf("%d, %d\n", S1, S2);
 }
