@@ -19,7 +19,6 @@ y++;
 }
 if (!*y)
 return (x);
-haystack = x + 1;
 }
 return (NULL);
 }
