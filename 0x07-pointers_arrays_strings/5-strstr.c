@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 #include <stdio.h>
 /**
  *_strstr- locates a substring
@@ -18,7 +18,7 @@ haystack++;
 y++;
 }
 if (!*y)
-return (x);      
+return (x);
 haystack = x + 1;
 }
 return (NULL);
