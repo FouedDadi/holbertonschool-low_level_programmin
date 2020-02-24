@@ -13,8 +13,8 @@ while (*s != '\0')
 const char *a = accept;
 while (*a != '\0')
 if (*a++ == *s)
-return (char *) s;
+return (s);
 ++s;
 }
-return NULL;
+return (NULL);
 }
