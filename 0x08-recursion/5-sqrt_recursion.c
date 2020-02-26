@@ -1,19 +1,19 @@
 #include "holberton.h"
 /**
- *sqrt- helper function
+ *_sqrt- helper function
  *@n: integer
  *@x: counter
  *Return: return statement
  */
-int sqrt(int n, int x)
+int _sqrt(int n, int x)
 {
-int X;
+int S;
 S = x * x;
 if (n == S)
 return (x);
 else if (n < S)
 return (-1);
-return (sqrt(n, ++x));
+return (_sqrt(n, ++x));
 }
 #include "holberton.h"
 /**
@@ -27,5 +27,5 @@ if (n < 0)
 return (-1);
 if (n == 1)
 return (1);
-return (sqrt(n, 2));
+return (_sqrt(n, 2));
 }
