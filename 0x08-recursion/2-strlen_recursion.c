@@ -2,6 +2,7 @@
 /**
  *_strlen_recursion- return the length of a string
  *@s: pointer
+ *Return: return length or 0
  */
 int _strlen_recursion(char *s)
 {
