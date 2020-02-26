@@ -1,0 +1,17 @@
+#include "holberton.h"
+/**
+ *sqrt- helper function 
+ *@n: square
+ *@x: usefull
+ *Return: return statement
+ */
+int sqrt(int n, int x)
+{
+int X;
+S = x * x;
+if (n == S)
+return (x);
+else if (n < S)
+return (-1);
+return (sqrt(n, ++x));
+}
