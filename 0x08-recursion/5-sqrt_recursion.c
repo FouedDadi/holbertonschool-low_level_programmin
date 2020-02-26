@@ -1,0 +1,31 @@
+#include "holberton.h"
+/**
+ *sqrt- helper function
+ *@n: integer
+ *@x: counter
+ *Return: return statement
+ */
+int sqrt(int n, int x)
+{
+int X;
+S = x * x;
+if (n == S)
+return (x);
+else if (n < S)
+return (-1);
+return (sqrt(n, ++x));
+}
+#include "holberton.h"
+/**
+ *_sqrt_recursion- sqaure implementation
+ *@n: integer
+ *Return: return statement
+ */
+int _sqrt_recursion(int n)
+{
+if (n < 0)
+return (-1);
+if (n == 1)
+return (1);
+return (sqrt(n, 2));
+}
