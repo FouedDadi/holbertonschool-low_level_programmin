@@ -1,0 +1,14 @@
+#include "holberton.h"
+#include <stdio.h>
+/**
+ *main- print the name of the program
+ *@argc: arguments length
+ *@argv: each argument content
+ */
+char main(int argc, char *argv[])
+{
+int x;
+for (x = 0; x < argc; x++)
+printf("%s ", argv[x]);
+printf("\n");
+}
