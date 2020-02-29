@@ -13,5 +13,5 @@ int S;
 UNUSED(argv);
 S = argc - 1;
 printf("%d\n", S);
-return (0); 
+return (0);
 }
