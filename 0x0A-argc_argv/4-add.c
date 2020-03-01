@@ -18,9 +18,9 @@ return (0);
 }
 for (x = 1; x < argc; x++)
 {
-for (y = 1; argv[y] != '\0'; y++)
+for (y = 0; argv[x][y] != '\0'; y++)
 {
-if (!isdigit(*argv[y]))
+if (!isdigit(argv[x][y]))
 {
 printf("Error\n");
 return (1);
