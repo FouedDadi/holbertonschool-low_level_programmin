@@ -14,7 +14,7 @@ if (argc == 3)
 {
 x = atoi(argv[1]);
 y = atoi(argv[2]);
-S = (x * y);
+S = x *y;
 printf("%d\n", S);
 }
 else
