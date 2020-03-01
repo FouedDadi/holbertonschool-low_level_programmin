@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-  int cents , c25 = 0, c10 = 0, c5 = 0, c2 = 0, c1 = 0;
+int cents, c25 = 0, c10 = 0, c5 = 0, c2 = 0, c1 = 0;
 if (argc != 2)
 {
 printf("Error\n");
@@ -27,10 +27,10 @@ if (cents >= 25)
 c25 = cents / 25;
 cents = cents % 25;
 }
- if (cents >= 10)
+if (cents >= 10)
 {
 c10 = cents / 10;
-cents= cents % 10;
+cents = cents % 10;
 }
 if (cents >= 5)
 {
