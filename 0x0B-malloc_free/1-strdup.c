@@ -13,8 +13,8 @@ char *dp;
 char *c;
 if (str == NULL)
 return (NULL);
-while (str[x])
-x++;
+for (x = 0; str[x] != '\0'; x++)
+;
 dp = malloc(x + 1);
 c = dp;
 if (dp == NULL)
