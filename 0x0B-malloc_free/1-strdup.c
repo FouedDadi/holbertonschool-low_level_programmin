@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 /**
  *_strdup- duplicate an old string
  *@str: pointer to charracter
@@ -9,20 +8,20 @@
  */
 char *_strdup(char *str)
 {
-int size;
-static char *dp;
+int x;
+char *dp;
 char *c;
-size = strlen(str);
-dp = malloc(sizeof(size + 1));
+if (str == NULL)
+return (NULL);
+while (str[x])
+x++;
+dp = malloc(x + 1);
+c = dp;
 if (dp == NULL)
 return (NULL);
-c = dp;
 while (*str)
-{
-*c = *str;
-c++;
-str++;
-}
+*c++ = *str++;
 *c = '\0';
 return (dp);
+free(dp);
 }
