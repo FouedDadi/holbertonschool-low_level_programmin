@@ -10,7 +10,7 @@ char **strtow(char *str)
 {
 int x, c = 0, p = 0;
 char array, token;
-if (str == NULL || str == "")
+if (str == NULL || *str == '\0')
 return (NULL);
 for (x = 0; str[x] != '\0'; x++)
 {
@@ -28,5 +28,5 @@ array[p] = malloc(strlen(token));
 strcpy(array[p], token);
 token = strtok(NULL, " ");
 p++;
-return (0);
+return (array);
 }
