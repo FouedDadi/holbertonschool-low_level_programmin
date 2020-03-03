@@ -24,5 +24,5 @@ c++;
 str++;
 }
 *c = '\0';
-return(dp);
+return (dp);
 }
