@@ -8,25 +8,27 @@
  */
 char **strtow(char *str)
 {
-int x, c = 0, p = 0;
-char array, token;
+int x, y, l;
+ char *w, i;
 if (str == NULL || *str == '\0')
 return (NULL);
-for (x = 0; str[x] != '\0'; x++)
+l = 0;
+for (x = 0; x < str; x++)
 {
-if (str[x] == ' ')
-{
-c++;
+for (y = 0; str[x][y] != '\0'; y++)
+l++;
 }
-}
-c += 1;
-char *array[c + 1];
-char *token = strtok(str, " ");
-while (token != NULL)
+l++;
+w = malloc(l);
+if (w == NULL)
+return (NULL);
+for (x = 0; x < str; x++)
 {
-array[p] = malloc(strlen(token));
-strcpy(array[p], token);
-token = strtok(NULL, " ");
-p++;
-return (array);
+for (y = 0; str[x][y] !='\0'; y++)
+if (*w == " ")
+*w += 1;
+w[i] = str[x][y];
+i++;
+}
+return (w);
 }
