@@ -8,7 +8,7 @@
  */
 char **strtow(char *str)
 {
-int x, y, l;
+int x, l;
 char **w;
 if (str == NULL || *str == '\0')
 return (NULL);
@@ -18,12 +18,7 @@ l++;
 w = malloc(l);
 if (w == NULL)
 return (NULL);
-for (x = 0; x < str[x]; x++)
-{
-for (y = 0; y < str[y]; y++)
-if (str[x] != " ")
 *w[x] = str[x];
 x++;
-}
 return (w);
 }
