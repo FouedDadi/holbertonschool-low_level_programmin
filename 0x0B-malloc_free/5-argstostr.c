@@ -9,12 +9,14 @@
 */
 char *argstostr(int ac, char **av)
 {
-int x, y, w = 0, l = 0;
+int x, y, w, l;
 char *S;
 if (ac == 0)
 return (NULL);
 if (av == NULL)
 return (NULL);
+l = 0;
+w = 0;
 while (x < ac)
 {
 y = 0;
@@ -26,6 +28,7 @@ y++;
 l++;
 x++;
 }
+l++;
 S = malloc(l);
 if (S == NULL)
 return (NULL);
