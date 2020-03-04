@@ -18,7 +18,10 @@ l++;
 w = malloc(l);
 if (w == NULL)
 return (NULL);
+for (x = 0; str[x]; x++)
+{
 *w[x] = str[x];
 x++;
+}
 return (w);
 }
