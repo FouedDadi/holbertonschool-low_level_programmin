@@ -9,7 +9,7 @@
 char **strtow(char *str)
 {
 int x, y, l;
-char *w, i;
+char **w;
 if (str == NULL || *str == '\0')
 return (NULL);
 l = 0;
@@ -21,10 +21,9 @@ return (NULL);
 for (x = 0; x < str[x]; x++)
 {
 for (y = 0; y < str[y]; y++)
-if (str[i] = '32')
-w += 1;
-w[i] = str[i];
-i++;
+if (str[x] != " ")
+*w[x] = str[x];
+x++;
 }
 return (w);
 }
