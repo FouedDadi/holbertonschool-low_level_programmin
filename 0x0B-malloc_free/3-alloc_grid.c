@@ -15,7 +15,7 @@ return (NULL);
 w = malloc(sizeof(int *) * height);
 if (w == NULL)
 return (NULL);
-for (x = 0; x < width; x++)
+for (x = 0; x < height; x++)
 {
 w[x] = malloc(sizeof(int) * width);
 if (w[x] == NULL)
