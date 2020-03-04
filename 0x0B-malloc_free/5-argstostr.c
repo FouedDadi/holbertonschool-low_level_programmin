@@ -23,6 +23,7 @@ while (av[x][y] != '\0')
 l++;
 y++;
 }
+l++;
 x++;
 }
 S = malloc(l);
