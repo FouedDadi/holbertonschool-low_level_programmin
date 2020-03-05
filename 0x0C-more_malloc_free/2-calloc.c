@@ -16,11 +16,7 @@ return (NULL);
 p = malloc(nmemb * size);
 if (p == NULL)
 return (NULL);
-x = 0;
-while (x < (nmemb * size))
-{
-x++;
+for (x = 0; x < (nmemb * size); x++)
 p[x] = '\0';
-}
 return (p);
 }
