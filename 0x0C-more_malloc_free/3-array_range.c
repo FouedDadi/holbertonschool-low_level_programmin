@@ -16,10 +16,7 @@ return (NULL);
 p = malloc(sizeof(int) * (max - min));
 if (p == NULL)
 return (NULL);
-for (x = min; x < max; x++)
-{
+for (x = min; x < max; x++, min++)
 p[x] = min;
-min++;
-}
 return (p);
 }
