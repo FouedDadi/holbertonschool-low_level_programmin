@@ -2,18 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
+ **_calloc- allocate memory for an array
+ *@nmemb: number of elements
+ *@size: size of each element
+ *Return: return NULL in two cases and return p
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int x;
-char *p
+ char *p;
 p = malloc(nmemb * size);
 if (p == NULL)
 return (NULL);
-if (nmemb == NULL) || (size == NULL)
+if (nmemb == 0 || size == 0)
 return (NULL);
 x = 0;
 while (x < (nmemb * size))
