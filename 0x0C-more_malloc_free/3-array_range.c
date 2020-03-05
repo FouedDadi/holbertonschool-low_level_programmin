@@ -13,10 +13,10 @@ int x;
 int *p;
 if (min > max)
 return (NULL);
-p = malloc(sizeof(int) * (max - min));
+p = malloc(sizeof(int) * (max - min + 1));
 if (p == NULL)
 return (NULL);
-for (x = min; x < max; x++)
+for (x = 0; x < max; x++)
 {
 p[x] = min;
 min++;
