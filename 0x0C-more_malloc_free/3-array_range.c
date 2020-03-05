@@ -17,7 +17,10 @@ return (NULL);
 p = malloc(sizeof(int) * y);
 if (p == NULL)
 return (NULL);
-for (x = min; x < y; x++, min++)
+for (x = min; x < y; x++)
+{
 p[x] = min;
+min++;
+}
 return (p);
 }
