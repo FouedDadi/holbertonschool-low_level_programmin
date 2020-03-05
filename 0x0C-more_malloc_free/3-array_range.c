@@ -13,7 +13,7 @@ int x;
 int *p;
 if (min > max)
 return (NULL);
-p = malloc(sizeof(int) * (max - min + 1));
+p = malloc(sizeof(int) * (max - min));
 if (p == NULL)
 return (NULL);
 for (x = min; x < max; x++)
