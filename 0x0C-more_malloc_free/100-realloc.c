@@ -14,7 +14,6 @@ void *p;
 p = ptr;
 if (new_size > old_size || ptr == NULL)
 {
-p = ptr;
 free(ptr);
 p = malloc(new_size);
 return (p);
