@@ -10,11 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-int mul, num1, num2, x, y;
-for (x = 1; x < argc; x++)
-{
-for (y = 0; argv[x][y] != '\0'; y++)
-{
+int mul, num1, num2;
 if (argc == 3)
 {
 num1 = atoi(argv[1]);
@@ -24,8 +20,6 @@ else
 {
 printf("Error\n");
 exit(98);
-}
-}
 }
 if (isdigit(num1) == 0 && isdigit(num2) == 0)
 {
