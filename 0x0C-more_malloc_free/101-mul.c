@@ -15,8 +15,6 @@ if (argc == 3)
 {
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
-mul = num1 *num2;
-printf("%d\n", mul);
 }
 else
 {
@@ -28,5 +26,6 @@ if isdigit(num1) == 0 && isdigit(num2) == 0
 printf("Error\n");
 exit(98);
 }
-return (0);
+mul = num1 * num2;
+printf("%d\n", mul);
 }
