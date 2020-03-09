@@ -1,13 +1,10 @@
 #ifndef _DOG_H_
 #define _DOG_H_
-struct dog
+int _putchar(char c);
+typedef struct dog
 {
 char *name;
 char *owner;
 float age;
-};
-int _putchar(char c);
-
-
-
+}dog_new;
 #endif
