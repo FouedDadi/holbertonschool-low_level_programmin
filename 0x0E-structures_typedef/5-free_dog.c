@@ -5,9 +5,17 @@
  *free_dog- dogo freed
  *@d: pointer to dogo
  */
-void free_dog(dog_t *d);
+void free_dog(dog_t *d)
 {
-free(d->name):
+if (d == NULL)
+{
+d->name = "";
+d->owner = "";
+}
+else
+{
+free(d->name);
 free(d->owner);
 free(d);
+}
 }
