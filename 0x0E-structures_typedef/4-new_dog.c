@@ -15,7 +15,7 @@ for (x = 0; name[x] != '\0'; x++)
 ;
 for (y = 0; owner[y] != '\0'; y++)
 ;
-struct dog *d;
+dog_t *d;
 d = malloc(sizeof(dog_t));
 if (d == NULL)
 return (NULL);
