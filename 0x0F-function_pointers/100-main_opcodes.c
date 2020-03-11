@@ -3,11 +3,11 @@
 #include <sdtlib.h>
 /**
  *main- main code
- *@argc: 
+ *@argc: number of arguments
  *@argv: each argument
  *Return: return 0
  */
-int main (int argc, int argv[])
+int main(int argc, int argv[])
 {
 int b;
 if (argc != 2)
@@ -18,7 +18,7 @@ exit(1);
 b = atoi(argv[1]);
 if (b < 0)
 {
-printf("Error\n");  
+printf("Error\n");
 exit(2);
 }
 return (0);
