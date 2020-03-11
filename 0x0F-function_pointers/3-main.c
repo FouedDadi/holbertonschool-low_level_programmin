@@ -22,6 +22,6 @@ if (get_op_func(argv[2]) == NULL)
 printf("Error\n");
 exit(99);
 }
-res = get_op_func(argv[2](num1, num2);
+res = get_op_func((argv[2])(num1, num2);
 return (0);
 }
