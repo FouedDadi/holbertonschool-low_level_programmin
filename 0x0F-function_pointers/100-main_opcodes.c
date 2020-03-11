@@ -7,7 +7,7 @@
  *@argv: each argument
  *Return: return 0
  */
-int main(int argc, int argv[])
+int main(int argc, char *argv[])
 {
 int b;
 if (argc != 2)
