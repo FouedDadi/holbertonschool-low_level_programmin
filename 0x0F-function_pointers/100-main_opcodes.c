@@ -11,10 +11,12 @@ int main(int argc, char *argv[])
 {
 if (argc != 2)
 {
+int b;
 printf("Error\n");
 exit(1);
 }
-if (atoi(argv[1]) < 0)
+b = atoi(argv[1]);
+if (b < 0)
 {
 printf("Error\n");
 exit(2);
