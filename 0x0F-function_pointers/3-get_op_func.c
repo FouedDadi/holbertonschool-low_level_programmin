@@ -23,5 +23,5 @@ if (*s == *ops[i].op)
 return (ops[i].f);
 i++;
 }
-return (0);
+return (NULL);
 }
