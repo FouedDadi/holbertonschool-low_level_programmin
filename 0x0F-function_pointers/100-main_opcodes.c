@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 #include <stdio.h>
-#include <sdtlib.h>
+#include <stdlib.h>
 /**
  *main- main code
  *@argc: number of arguments
@@ -9,14 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-int b;
 if (argc != 2)
 {
 printf("error\n");
 exit(1);
 }
-b = atoi(argv[1]);
-if (b < 0)
+if (atoi(argv[1]) < 0)
 {
 printf("Error\n");
 exit(2);
