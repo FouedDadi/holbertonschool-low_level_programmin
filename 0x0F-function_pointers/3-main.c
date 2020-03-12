@@ -23,7 +23,7 @@ if (get_op_func(argv[2]) == NULL)
 printf("Error\n");
 exit(99);
 }
-if (strlen(argv[1]) != 1)
+if (strlen(argv[2]) != 1)
 {
 printf("Error\n");
 exit(99);
