@@ -24,5 +24,5 @@ exit(99);
 }
 r = (get_op_func(argv[2])(num1, num2));
 printf("%d\n", r);
-return (0);
+return (NULL);
 }
