@@ -46,12 +46,12 @@ return (M);
 int op_div(int a, int b)
 {
 int d;
-d = a / b;
 if (b == 0)
 {
-printf("Error");
+printf("Error\n");
 exit(100);
 }
+d = a / b;
 return (d);
 }
 /**
@@ -63,11 +63,11 @@ return (d);
 int op_mod(int a, int b)
 {
 int m;
-m = a % b;
 if (b == 0)
 {
-printf("Error");
+printf("Error\n");
 exit(100);
 }
+m = a % b;
 return (m);
 }
