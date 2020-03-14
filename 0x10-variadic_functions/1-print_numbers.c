@@ -17,8 +17,11 @@ x = 0;
 while (x < n)
 {
 printf("%d", va_arg(unintargp, int));
-if (x < n - 1 && separator != NULL)
+if (x < n - 1)
+{  
+if (separator != NULL)
 printf("%s", separator);
+}
 x++;
 }
 va_end(unintargp);
