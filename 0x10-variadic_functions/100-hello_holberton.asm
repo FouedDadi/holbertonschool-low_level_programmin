@@ -4,7 +4,7 @@ msg:	 db "Hello, Holberton", 15
 	SECTION .text
 	global main
 main:
-	mov edx, 12
+	mov edx, 16
 	mov ecx, msg
 	mov ebx, 1
 	mov eax, 4
