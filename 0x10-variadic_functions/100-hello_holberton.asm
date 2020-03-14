@@ -1,7 +1,13 @@
-org  0x100
-mov  dx, msg
-mov  ah, 9
-nt  0x21
-mov  ah, 0x4c
-int  0x21
-msg  db 'Hello, Holberton', 0x0d, 0x0a, '$'
+	section     .text
+	global      _start
+_start:
+	mov     edx,len
+	mov     ecx,msg
+	mov     ebx,1
+	mov     eax,4
+	int     0x80
+	mov     eax,1
+	int     0x80
+	section     .data
+	msg     db  'Hello, Holberton',0xa
+	len     equ $ - msg
