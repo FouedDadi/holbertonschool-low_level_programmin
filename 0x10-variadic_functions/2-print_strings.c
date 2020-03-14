@@ -19,7 +19,7 @@ while (x < n)
 {
 c = va_arg(target, char *);
 if (c == NULL)
-printf("nil");
+printf("nil\n");
 else
 printf("%s", c);
 if (x < n - 1)
