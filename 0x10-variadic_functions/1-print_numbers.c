@@ -18,7 +18,7 @@ while (x < n)
 {
 printf("%d", va_arg(unintargp, int));
 if (x < n - 1)
-{  
+{
 if (separator != NULL)
 printf("%s", separator);
 }
