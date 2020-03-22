@@ -7,8 +7,8 @@
  */
 void free_list(list_t *head)
 {
-list_t *tmp;
-if (head != NULL)
+struct list_t *tmp;
+while (head != NULL)
 {
 tmp = head;
 head = head->next;
