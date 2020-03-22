@@ -24,7 +24,6 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 struct list_s *new_node = (struct list_s*) malloc(sizeof(struct list_s));
 struct list_s *last;
-last = *head;
 if (new_node == NULL)
 return (NULL);
 if (new_node != NULL)
@@ -36,6 +35,7 @@ if (*head == NULL)
 *head = new_node;
 return (new_node);
 }
+last = *head;
 while (last->next != NULL)
 last = last->next;
 last->next = new_node;
