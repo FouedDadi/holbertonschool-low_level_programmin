@@ -22,7 +22,7 @@ return (l);
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-struct list_s *new_node = (struct list_s*) malloc(sizeof(struct list_s));
+struct list_s *new_node = (struct list_s *) malloc(sizeof(struct list_s));
 struct list_s *last;
 if (new_node == NULL)
 return (NULL);
