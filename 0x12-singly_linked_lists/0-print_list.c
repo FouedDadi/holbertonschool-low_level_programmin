@@ -15,7 +15,6 @@ if (h->str != NULL)
 printf("[%d] %s\n", h->len, h->str);
 if (h->str == NULL)
 printf("[%d] (nil)\n", x);
-printf("\n");
 h = h->next;
 }
 return (x);
