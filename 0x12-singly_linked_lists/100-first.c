@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void myfunction(void) __attribute__ ((constructor));
 /**
  *myfunction- function that will be executed before main
