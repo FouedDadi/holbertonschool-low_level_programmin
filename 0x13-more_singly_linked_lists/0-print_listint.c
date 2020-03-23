@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- *
- *
- *
+ *print_listint- function to print elements of list
+ *@h: head of the list
+ *Return: return x
  */
 size_t print_listint(const listint_t *h)
 {
