@@ -15,8 +15,8 @@ return (0);
 if (*head != NULL)
 {
 tmp = *head;
-free(*head);
 data = tmp->n;
+free(*head);
 *head = (*head)->next;
 }
 return (data);
