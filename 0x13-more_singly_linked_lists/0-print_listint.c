@@ -9,7 +9,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-unsigned int x;
+size_t x;
 for (x = 0; h != NULL; x++)
 {
 if (h-> != 0)
