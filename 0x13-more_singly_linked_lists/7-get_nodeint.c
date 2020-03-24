@@ -12,9 +12,9 @@ struct listint_s *current;
 unsigned int x;
 if (head == NULL)
 return (NULL);
+current = head;
 for (x = 0; head != NULL; x++)
 {
-current = head;
 if (x == index)
 return (current);
 current = current->next;
