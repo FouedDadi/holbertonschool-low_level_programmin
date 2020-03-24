@@ -13,7 +13,7 @@ unsigned int x;
 if (head == NULL)
 return (NULL);
 current = head;
-for (x = 0; head != NULL; x++)
+for (x = 0; current != NULL; x++)
 {
 if (x == index)
 return (current);
