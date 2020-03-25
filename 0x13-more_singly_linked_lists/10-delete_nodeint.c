@@ -20,7 +20,7 @@ if (index == 0)
 free(tmp);
 return (1);
 }
-for (x = 0; x < (index - 1); x++)
+for (x = 0; x < (index - 1) && tmp != NULL; x++)
 {
 tmp = tmp->next;
 }
