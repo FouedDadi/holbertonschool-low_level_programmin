@@ -21,11 +21,13 @@ free(tmp);
 return (1);
 }
 for (x = 0; x < (index - 1); x++)
+{
 tmp = tmp->next;
+}
 if (tmp == NULL)
 return (-1);
 if (tmp->next == NULL)
-return (1);
+return (-1);
 suivant = tmp->next->next;
 free(tmp->next);
 tmp->next = suivant;
