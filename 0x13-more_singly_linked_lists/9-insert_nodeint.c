@@ -11,12 +11,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 struct listint_s *tmp, *new_node;
 unsigned int x;
-tmp = *head;
 new_node = (struct listint_s *) malloc(sizeof(struct listint_s));
-if (new_node == NULL)
+if (new_node == NULL || head == NULL)
 return (NULL);
-if (head == NULL)
-return (NULL);
+tmp = *head;
 if (idx == 0)
 {
 new_node->n = n;
