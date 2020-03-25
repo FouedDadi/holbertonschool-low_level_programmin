@@ -20,11 +20,8 @@ if (index == 0)
 free(tmp);
 return (1);
 }
-while (tmp != NULL)
-{
 for (x = 0; x < (index - 1) && tmp != NULL; x++)
 tmp = tmp->next;
-}
 if (tmp == NULL)
 return (-1);
 if (tmp->next == NULL)
