@@ -26,7 +26,8 @@ for (x = _strlen(b) - 1; x >= 0; x--)
 if (b[x] == '1')
 val += c;
 c *= 2;
-if (b[x] != '0' && b[x] != '1')                                                                                       return (0);
+if (b[x] != '0' && b[x] != '1')
+return (0);
 }
 return (val);
 }
