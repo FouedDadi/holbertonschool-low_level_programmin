@@ -11,7 +11,7 @@ unsigned long int x;
 
 if (index > (sizeof(unsigned long int) * 8))
 return (-1);
-x = (1 << index)
+x = (1 << index);
 *n |= x;
 return (1);
 }
