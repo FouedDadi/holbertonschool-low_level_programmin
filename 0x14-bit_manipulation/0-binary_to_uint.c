@@ -21,6 +21,8 @@ unsigned int binary_to_uint(const char *b)
 unsigned int c = 1;
 unsigned int val = 0;
 int x;
+if (b == NULL)
+return (0);
 for (x = _strlen(b) - 1; x >= 0; x--)
 {
 if (b[x] == '1')
