@@ -18,9 +18,9 @@ if (text_content != NULL)
 for (x = 0; text_content[x] != '\0'; x++)
 ;
 w = write(o, text_content, x);
+}
 if (w == -1)
 return (-1);
-}
 close(o);
 return (1);
 }
