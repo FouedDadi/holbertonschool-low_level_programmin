@@ -29,7 +29,6 @@ return (-1);
 suivant = tmp->next->next;
 suivant->prev->prev = tmp;
 free(tmp->next);
-free(suivant->prev);
 tmp->next = suivant;
 suivant->prev = tmp;
 return (1);
