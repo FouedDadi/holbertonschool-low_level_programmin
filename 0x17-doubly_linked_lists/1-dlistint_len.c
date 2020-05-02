@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *print_dlistint- return number of elements of node
+ *dlistint_len- return number of elements of node
  *@h: pointer to head of list
  *Return: return x
  */
