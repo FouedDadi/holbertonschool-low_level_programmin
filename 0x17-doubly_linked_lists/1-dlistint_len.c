@@ -8,7 +8,7 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-int x;
+int x = 0;
 while (h != NULL)
 {
 h = h->next;
