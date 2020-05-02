@@ -27,7 +27,7 @@ return (-1);
 if (tmp->next == NULL)
 return (-1);
 suivant = tmp->next->next;
-suivant->prev->prev = tmp;
+tmp = suivant->prev->prev;
 free(tmp->next);
 free(suivant->prev);
 tmp->next = suivant;
