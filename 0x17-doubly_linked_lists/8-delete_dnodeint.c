@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *delete_dnodeint_at_index- function that delete node at precised index
+ *delete_nodeint_at_index- function that delete node at precised index
  *@head: head of the list
  *@index: index
  *Return: return 1 or -1
@@ -27,7 +27,10 @@ return (-1);
 if (tmp->next == NULL)
 return (-1);
 suivant = tmp->next->next;
+suivant->prev->prev = tmp;
 free(tmp->next);
+free(suivant->prev);
 tmp->next = suivant;
+suivant->prev = tmp;
 return (1);
 }
