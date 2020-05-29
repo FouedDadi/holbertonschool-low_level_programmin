@@ -27,7 +27,7 @@ while (head)
 }
 node->next = head;
 node->key = strdup(key);
-if (node->value == NULL)
+if (node->key == NULL)
 {
 	free(node);
 	return (0);
