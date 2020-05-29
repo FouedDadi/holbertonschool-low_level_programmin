@@ -14,10 +14,10 @@ void hash_table_delete(hash_table_t *ht)
 	{
 		node = ht->array[x];
 		while (node)
-		{	
-			free(node);
+		{
 			free(node->key);
 			free(node->value);
+			free(node);
 			node = node->next;
 		}
 	}
