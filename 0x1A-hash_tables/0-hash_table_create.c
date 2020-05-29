@@ -10,7 +10,10 @@ hash_table_t *table;
 unsigned int x;
 table = malloc(sizeof(hash_table_t));
 if (table == NULL)
+{
+free(table);
 return (NULL);
+}
 table->array = malloc(sizeof(hash_table_t) * size);
 if (table->array == NULL)
 return (NULL);
